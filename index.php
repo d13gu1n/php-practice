@@ -9,6 +9,20 @@
     <p>This is a <?php echo "awesome"; ?> paragraph!</p>
     <?php
         echo "This is ALSO a paragraph!";
+
+        // Scalar types (contains one value)
+        $name = "Dieguin";
+        echo $name;
+        $string = "Diego";
+        $int = 12354353;
+        $float = 2.5678;
+        $bool = true;
+
+        // Array type
+        $names = ["Daniel", "Bella", "Frida"];
+
+        // Object type
+        $object = new Car();
     ?>
 </body>
 </html>
