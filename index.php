@@ -43,6 +43,107 @@
         $_SESSION["username"] = "Dieguin Dieganero";
         echo "<br>";
         echo $_SESSION["username"];
+        echo "<br>";
+
+        // String operator
+        $a = "Hello";
+        $b = "World!";
+        $c = $a . " " . $b;
+        echo $c;
+
+        echo "<br>";
+
+        // Arithmetic operator
+        echo 1 + 2;
+        echo "<br>";
+        echo 10 % 3;
+        echo "<br>";
+        echo 10 ** 3;
+        echo "<br>";
+        echo (1 + 2) * (4 - 2);
+
+        echo "<br>";
+
+        // Assignment operators
+        $a = 2;
+        $a *= 4;
+        echo $a;
+
+        echo "<br>";
+
+        // Comparison operator
+        $a = 4;
+        $b = 4;
+
+        if ($a <= $b) {
+            echo "This statement is true!";
+        }
+
+        echo "<br>";
+
+        // Logical operators
+        $a = 4;
+        $b = 4;
+        $c = 2;
+        $d = 6;
+
+        if ($a == $b || $c == $d && $a == $c) {
+            echo "This statement is true!";
+        }
+
+        echo "<br>";
+
+        // Incrementing/decrementing operators
+        $a = 1;
+        echo $a--;
+        echo "<br>";
+        echo $a;
+
+        echo "<br>";
+
+        // Control structures
+        $bool = true;
+        $a = 1;
+        $b = 4;
+
+        $returnedStr = match(true) {
+            $a < $b && !$bool => "First condition is true!",
+            $a < $b && $bool => "Second condition is true!",
+            default => "None of the conditions were true!"
+
+        };
+        echo $returnedStr;
+
+        echo "<br>";
+
+        switch($a) {
+            case 1:
+                echo "The first case is correct";
+                break;
+            case 2:
+                echo "The second case is correct!";
+                break;
+            case 3:
+                echo "The third case is correct";
+                break;
+            default:
+                echo "None of the conditions were true!";
+                break;
+        }
+
+        
+
+        // Match (only works in PHP 8+)
+
+        
+
+        /* if ($a < $b && !$bool) {
+            echo "First condition is true!";
+        } else if ($a < $b && $bool) {
+            echo "Second condition is true!";
+        } else {
+            echo "None of the conditions were true!";
+        } */
     ?>
 </body>
 </html>
