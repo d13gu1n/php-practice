@@ -106,6 +106,8 @@
         $a = 1;
         $b = 4;
 
+        // Match (only works in PHP 8+)
+
         $returnedStr = match(true) {
             $a < $b && !$bool => "First condition is true!",
             $a < $b && $bool => "Second condition is true!",
@@ -131,9 +133,6 @@
                 break;
         }
 
-        
-
-        // Match (only works in PHP 8+)
 
         
 
