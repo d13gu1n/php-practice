@@ -103,20 +103,10 @@
 
         // Control structures
         $bool = true;
-        $a = 1;
+        $a = "1";
         $b = 4;
 
-        // Match (only works in PHP 8+)
-
-        $returnedStr = match(true) {
-            $a < $b && !$bool => "First condition is true!",
-            $a < $b && $bool => "Second condition is true!",
-            default => "None of the conditions were true!"
-
-        };
-        echo $returnedStr;
-
-        echo "<br>";
+        
 
         switch($a) {
             case 1:
@@ -132,6 +122,28 @@
                 echo "None of the conditions were true!";
                 break;
         }
+
+        // Match (only works in PHP 8+)
+
+        $returnedStr = match(true) {
+            $a < $b && !$bool => "First condition is true!",
+            $a < $b && $bool => "Second condition is true!",
+            default => "None of the conditions were true!"
+
+        };
+        echo $returnedStr;
+
+        echo "<br>";
+
+        $result = match($a) {
+            1, 3, 5 => "Variable a is equal to one!",
+            2 => "Variable a is equal to two!",
+            default => "None were a match",
+        };
+
+        echo $result;
+
+        echo "<br>";
 
 
         
