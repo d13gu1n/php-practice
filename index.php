@@ -155,6 +155,48 @@
         } else {
             echo "None of the conditions were true!";
         } */
+
+        // Arrays
+        $fruits = [
+            "Apple", 
+            "Banana", 
+            "Cherry",
+        ];
+
+        $fruits[1] = "Orange";
+
+        echo $fruits[1];
+
+        echo "<br>";
+        
+        for ($i = 0; $i <= sizeof($fruits) - 1; $i++) {
+            echo $fruits[$i];
+        }
+
+        echo "<br>";
+
+        $fruits02 = [
+            "Apple",
+            "Banana",
+            "Blackberry",
+        ];
+
+        // unset($fruits02[1]);
+
+        array_splice($fruits02, 0, 1);
+
+        echo $fruits02[1];
+
+        echo "<br>";
+
+        $tasks = [
+            "laundry" => "Daniel",
+            "trash" => "Frida",
+            "vacuum" => "Basse",
+            "dishes" => "Bella",
+        ];
+
+        echo $tasks["laundry"];
     ?>
 </body>
 </html>
