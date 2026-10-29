@@ -197,6 +197,32 @@
         ];
 
         echo $tasks["laundry"];
+        echo "<br>";
+        // sort($tasks);
+        print_r($tasks);
+        echo "<br>";
+        echo count($tasks);
+        array_push($fruits, "Mango");
+        echo "<br>";
+        print_r($fruits);
+        echo "<br>";
+        $tasks["dusting"] = "Tara";
+        print_r($tasks);
+        echo "<br>";
+        array_splice($fruits, 1, 0, "Apricot");
+        print_r($fruits);
+        $test = ["Peach", "Strawberry"];
+        array_splice($fruits, 1, 0, $test);
+        echo "<br>";
+        print_r($fruits);
+        echo "<br>";
+        $food = [
+            "fruits" => array("apple", "banana", "cherry"),
+            "meat" => array("chicken", "fish"),
+            "vegetables" => array("cucumber", "carrot"),
+        ];
+
+        echo $food["vegetables"][0];
     ?>
 </body>
 </html>
